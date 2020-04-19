@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱心</title>
+    <style>
+        p {
+            color: white;
+        }
+        
+        body {
+            background-color: #db7171;
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 200px auto;
+            transform: rotate(45deg);
+            animation: heart 1s infinite;
+            filter: drop-shadow(10px 10px 50px rgb(255 20 20));
+        }
+        
+        div::before,
+        div::after {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100%;
+        }
+        
+        div::after {
+            top: -50px;
+        }
+        
+        div::before {
+            left: -50px;
+        }
+        
+        @keyframes heart {
+            0% {
+                transform: rotate(45deg) scale(0.8);
+            }
+            50% {
+                transform: rotate(45deg) scale(1);
+            }
+            100% {
+                transform: rotate(45deg) scale(0.8);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>我爱你</p>
+    <embed height="0" width="0" src="/Users/javork/Desktop/前端/小米/bei.mp3"></embed>
+
+    <div>
+
+
+    </div>
+
+</body>
+
+</html>
